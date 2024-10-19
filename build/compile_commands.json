@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/prost/Prost/build",
+  "command": "C:\\Users\\alina\\Downloads\\x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\set.dir\\main.cpp.obj -c D:\\prost\\Prost\\main.cpp",
+  "file": "D:/prost/Prost/main.cpp",
+  "output": "CMakeFiles/set.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/prost/Prost/build",
+  "command": "C:\\Users\\alina\\Downloads\\x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\set.dir\\BitField.cpp.obj -c D:\\prost\\Prost\\BitField.cpp",
+  "file": "D:/prost/Prost/BitField.cpp",
+  "output": "CMakeFiles/set.dir/BitField.cpp.obj"
+},
+{
+  "directory": "D:/prost/Prost/build",
+  "command": "C:\\Users\\alina\\Downloads\\x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\set.dir\\Set.cpp.obj -c D:\\prost\\Prost\\Set.cpp",
+  "file": "D:/prost/Prost/Set.cpp",
+  "output": "CMakeFiles/set.dir/Set.cpp.obj"
+}
+]

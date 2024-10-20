@@ -13,11 +13,11 @@ int main() {
     std::cout << static_cast<uint32_t>(b) << std::endl;
     */
 
-    size_t size = 10;
+    size_t size = 100;
     Set m(size);
 
     try {
-        for (size_t i = 0; i < size; i++)
+        for (size_t i = 0; i < size - 1; i++)
             m.InsertElem(i);
 
         std::vector<uint64_t> vec = m.GetPrimary();

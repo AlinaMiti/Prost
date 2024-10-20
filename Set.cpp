@@ -18,17 +18,20 @@ Set::Set(const BitField& bf) : _bitField(bf){
 };
 
 void Set::InsertElem(uint64_t elem){
-    if (elem >= _maxPower) throw std::out_of_range("33Element out of range!");
+    if (elem >= _maxPower) 
+        throw std::out_of_range("33Element out of range!");
     _bitField.SetBit(elem);
 }
 
 void Set::DeleteElem(uint64_t elem){
-    if (elem >= _maxPower) throw std::out_of_range("44Element out of range!");
+    if (elem >= _maxPower) 
+        throw std::out_of_range("44Element out of range!");
     _bitField.ClrBit(elem);
 }
 
 bool Set::IsMember(uint64_t elem){
-    if (elem >= _maxPower) throw std::out_of_range("55Element out of range!");
+    if (elem >= _maxPower) 
+        throw std::out_of_range("55Element out of range!");
     return _bitField.GetBit(elem);
 }
 
@@ -41,7 +44,7 @@ std::vector<uint64_t> Set::GetPrimary(){
     Set copy(*this);
     size_t size = copy.GetMaxPower();
 
-    for(size_t i = 2; i <= size; ++i){
+    for(size_t i = 2; i < size; i++){
         if(copy.IsMember(i)){
             prost.push_back(i);
             for(size_t p = i*i; p < size; p += i){

@@ -1,6 +1,5 @@
 #include <iostream>
 #include <stdint.h>
-#pragma once
 
 class BitField {
 private:
@@ -16,18 +15,17 @@ public:
     BitField& operator=(const BitField& tmp);
     
     size_t GetLength() const; // Получить количество бит
-       
     void SetBit(size_t n);
-    void ClrBit(size_t n); 
+    void ClrBit(size_t n);
     uint8_t GetBit(size_t n) const; 
 
-
     BitField operator|(const BitField& tmp); 
-    BitField operator&(const BitField& tmp); 
+    BitField operator&(const BitField& tmp);
     BitField operator^(const BitField& tmp); 
     bool operator==(const BitField& tmp); 
     BitField operator~(); 
 
+      //ставить nullptr указатель
     ~BitField(){
         delete [] _mem;
     }
